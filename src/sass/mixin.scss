@@ -1,0 +1,14 @@
+@use './variables' as *;
+@mixin button($color-btn,$color-background,$border-color){
+    padding:5px 10px;
+    background-color: $black-color;
+    border: 1px solid $border-color;
+    color: $color-white;
+    transition: all 0.4s ease;
+    &:hover{
+        color: $color-btn;
+        background-color: $color-background;
+        border-color:$black-color;
+
+    }
+}

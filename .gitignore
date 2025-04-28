@@ -1,0 +1,16 @@
+# Ignoring node_modules
+node_modules/
+
+# Ignoring build files
+/dist
+/build
+
+# Ignoring IDE settings (لـ VSCode مثلًا)
+.vscode/
+
+# Ignoring log files
+*.log
+
+# Ignoring OS-specific files (مثلًا Mac أو Windows)
+.DS_Store
+Thumbs.db
