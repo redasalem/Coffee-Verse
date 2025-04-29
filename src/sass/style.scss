@@ -10,7 +10,8 @@ body{
 //الاصناف العامة
 .active{
     color:$red-color !important;
-    font-weight: 700;
+    font-weight: 800;
+
 }
 .line-heading{
     width: 10%;
@@ -322,6 +323,34 @@ header{
             }
         }
 
+    }
+  }
+
+  //about us
+  .about-top{
+    position: relative;
+    width: 100%;
+    height:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        position: absolute;
+        color: $color-white;
+        font-size: 46px;
+        font-weight: 600;
+    }
+    
+  }
+
+  .about_us{
+    padding: 2rem;
+    background-color: #f9f9f9;
+    h3{
+        font-size: 35px;
+    }
+    h6{
+        font-size: 25px;
     }
   }
 
