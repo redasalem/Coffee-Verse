@@ -4,19 +4,6 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
  import '../sass/style.scss';
 
 
- //Add  Active To all Links In Navbar
- let navLinks = document.querySelectorAll('.navbar-nav .nav-link');
- navLinks.forEach((link)=>{
-    link.addEventListener('click',()=>{
-        navLinks.forEach((i)=>{
-            i.classList.remove('active');
-        })
-        link.classList.add('active');
-    })
-
- })
-
-
 
 
 //  full years for copyright

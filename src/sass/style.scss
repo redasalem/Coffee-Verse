@@ -22,6 +22,10 @@ body{
     text-align: center;
     color: #342f2f;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
 
 // Header styles
 header{
@@ -51,6 +55,30 @@ header{
         }
     
     
+    }
+    //breadcrumb-item
+    .container{
+        margin: 20px 15px 20px;
+        
+        .breadcrumb{
+            display: flex;
+            align-items: center;
+            .breadcrumb-item{
+                    a{
+                        font-weight: 600;
+                        margin-left: 15px;
+                        color: #504c4c;
+                    }
+                   
+                }
+                .active-breadcrumb{
+                    font-weight: 500;
+                    font-size: 19px;
+                    color: $color-coffe;
+                }
+
+            }
+        
     }
     //carousel-top_styles
     .carousel-top{
@@ -85,7 +113,7 @@ header{
                     border-radius: 50%;
                     margin: 20px 5px 0px 0px;
                     &.active{
-                        background-color:#09c;
+                        background-color:$color-coffe;
                     }
                 }
             }
@@ -132,6 +160,12 @@ header{
             font-weight: 600;
             font-size: 17px;
         }
+        .btn{
+            background-color: $color-coffe;
+            &:hover{
+                background-color:rgba($color:$color-coffe, $alpha: 0.9);
+            }
+        }
     }
 
 
@@ -171,6 +205,125 @@ header{
     }
 }
 
+//page product
+.product-desc{
+    background-color: #f9f9f9;
+    padding: 2rem;
+    .container{
+        .desc{
+            font-size: 17px;
+            font-weight: 600;
+        }
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 170px;
+        margin: auto;
+        font-size: 17px;
+        font-weight: 600;
+        background-color: $color-coffe;
+        color: $color-white;
+        transition: all 0.4s ease;
+
+         &:hover{
+          background-color: #09c;
+
+         }
+    }
+
+}
+
+//reviews-section
+.reviews-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    
+    .reviews-title {
+      text-align: center;
+      font-size:25px;
+      margin-bottom: 1.5rem;
+      color: #5c4033; // لون بنى قريب من القهوة
+    }
+  
+    .review-card {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+      .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        .user{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+        }
+  
+        .user-name {
+          font-weight: bold;
+          color: #333;
+        }
+  
+        .stars {
+          color: #ffcc00; // لون النجوم ذهبى
+        }
+      }
+  
+      .review-text {
+        color: #555;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  //Similar-products
+  .Similar-products{
+    padding: 2rem;
+    background-color: #f9f9f9;
+    .featured-products{
+        .card{
+            width: 100%;
+            height:540px;
+            border-radius:22px;
+            img{
+                height: 300px;
+            }
+            .card-body{
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                    width:40%;
+                    font-size: 15px;
+                    font-weight: 600;
+                    background-color: $color-coffe;
+                    color: $color-white;
+                    transition: all 0.4s ease;
+            
+                     &:hover{
+                      background-color: #09c;
+            
+                     }
+            
+                }
+
+            }
+        }
+
+    }
+  }
 
 
 
@@ -304,6 +457,36 @@ footer {
 
         }
     }
+    .Similar-products{
+        .featured-products{
+            .card{
+                .card-body{
+                    .btn{
+                        display: flex;
+                        justify-content: center;
+                        align-items:center;
+                        width:40%;
+                        font-size: 12px;
+                        font-weight: 600;
+                        background-color: $color-coffe;
+                        color: $color-white;
+                        transition: all 0.4s ease;
+                
+                         &:hover{
+                          background-color: #09c;
+                
+                         }
+                
+                    }
+    
+                }
+            }
+    
+        }
+      }
+    
+    
+    
     
 }
 @media (max-width:1200px){
@@ -331,6 +514,33 @@ footer {
             }
         }
     }
+    .Similar-products{
+        .featured-products{
+            .card{
+                .card-body{
+                    .btn{
+                        display: flex;
+                        justify-content: center;
+                        align-items:center;
+                        width:50%;
+                        font-size: 10px;
+                        font-weight: 600;
+                        background-color: $color-coffe;
+                        color: $color-white;
+                        transition: all 0.4s ease;
+                
+                         &:hover{
+                          background-color: #09c;
+                
+                         }
+                
+                    }
+    
+                }
+            }
+    
+        }
+      }
 
 
 }
@@ -350,6 +560,36 @@ footer {
         width: 100%;
         }
     }
+    .Similar-products{
+        .featured-products{
+            .card{
+                .card-body{
+                    .btn{
+                        display: flex;
+                        justify-content: center;
+                        align-items:center;
+                        width:50%;
+                        font-size: 10px;
+                        font-weight: 600;
+                        background-color: $color-coffe;
+                        color: $color-white;
+                        transition: all 0.4s ease;
+                        
+                         &:hover{
+                          background-color: #09c;
+                
+                         }
+                
+                    }
+                    .old-price{
+                        margin-left: 7px;
+                    }
+    
+                }
+            }
+    
+        }
+      }
     
     
 
@@ -363,4 +603,6 @@ footer {
     }
 
 }
+
+
 

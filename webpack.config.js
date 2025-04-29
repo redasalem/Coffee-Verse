@@ -42,8 +42,20 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(), // تنظيف مجلد الإخراج قبل كل عملية بناء
     new HtmlWebpackPlugin({
-      template: './src/index.html', // ملف HTML المصدر
-      filename: 'index.html', // اسم ملف الإخراج لصفحة HTML
+      template: './src/index.html', 
+      filename: 'index.html', 
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/product_1.html', 
+      filename: 'product_1.html', 
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/product_2.html', 
+      filename: 'product_2.html', 
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/product_3.html', 
+      filename: 'product_3.html', 
     }),
     new MiniCssExtractPlugin({ 
       filename: 'styles.css', 
