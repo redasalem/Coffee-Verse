@@ -4,8 +4,6 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
  import '../sass/style.scss';
 
 
-
-
 //  full years for copyright
 let copyDate=new Date().getFullYear();
 let currentYear = document.querySelector('#year').innerHTML=copyDate;
@@ -35,3 +33,6 @@ let currentYear = document.querySelector('#year').innerHTML=copyDate;
   })();
 
 
+
+
+  
