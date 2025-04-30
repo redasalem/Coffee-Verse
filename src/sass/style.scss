@@ -28,6 +28,7 @@ a{
     color: #000;
 }
 
+
 // Header styles
 header{
     // navbar_styles
@@ -326,7 +327,7 @@ header{
     }
   }
 
-  //about us
+  //about us| about.html styles
   .about-top{
     position: relative;
     width: 100%;
@@ -353,6 +354,86 @@ header{
         font-size: 25px;
     }
   }
+
+  //contact pages styles
+  .contact-us{
+  
+    background-color: #f9f9f9;
+    .container{
+        .contact-info{
+            p{
+                font-size: 19px;
+                font-weight: 600;
+                i{
+                    color:$color-coffe;
+                    padding-left: 15px;
+                    font-size: 20px;
+                }
+            }
+        }
+        h5{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .social-icon{
+            a{
+                width: 30px;
+                height: 30px;
+                background-color:#09c;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: all 0.4s ease;
+                &:hover{
+                    background-color:$color-white;
+                    border: 1px solid gold;
+                    transform: translateY(-4px);
+                    i{
+                        color: #09c;
+                    }
+                }
+                i{
+                    color: $color-white;
+                    font-size: 15px;
+                    
+                
+                }
+            }
+        }
+        
+        }
+        form{
+            input,
+            textarea{
+
+                &::placeholder{
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+            }
+            button{
+                background-color: $color-coffe;
+                border: none;
+                font-size: 18px;
+                font-weight: 600;
+                transition: all 0.4s ease;
+                &:hover{
+                    background-color:$color-white;
+                    border:1px solid $color-coffe;
+                    color: $color-coffe;
+
+                }
+            }
+            .invalid-feedback{
+                font-size: 17px;
+                font-weight: 500;
+            }
+            
+        }
+    }
+  
 
 
 

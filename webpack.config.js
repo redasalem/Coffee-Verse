@@ -61,6 +61,14 @@ module.exports = {
       template: './src/about.html', 
       filename: 'about.html', 
     }),
+    new HtmlWebpackPlugin({
+      template: './src/distributors.html', 
+      filename: 'distributors.html', 
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/contact.html', 
+      filename: 'contact.html', 
+    }),
     new MiniCssExtractPlugin({ 
       filename: 'styles.css', 
       chunkFilename: 'styles.css', // يمنع إنشاء ملفات مجزأة
