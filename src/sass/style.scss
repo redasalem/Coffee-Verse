@@ -27,6 +27,14 @@ a{
     text-decoration: none;
     color: #000;
 }
+.scrolled{
+    background-color: rgb(197, 232, 225) !important;
+    
+
+}
+.scrolled .nav-link{
+    color: #000;
+}
 
 
 // Header styles
@@ -45,8 +53,8 @@ header{
         }
         .navbar-nav{
             .nav-link{
-                font-size: 16px;
-                font-weight: 500;
+                font-size: 20px;
+                font-weight: 600;
                 transition: all 0.4s ease;
                 &:hover{
                     color:$red-color !important;
@@ -88,6 +96,7 @@ header{
             display: block !important;
         }
         .carousel{
+            margin-top: 100px;
             .carousel-item{
                 img{
                     height: 450px;
@@ -146,7 +155,7 @@ header{
  .services{
         
     .card{
-        height: 200px;
+        min-height:100%;
         .card-title{
             font-size: 27px;
             font-weight: 800;

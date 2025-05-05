@@ -11,6 +11,8 @@ let currentYear = document.querySelector('#year').innerHTML=copyDate;
 
 
 
+
+
 // التحقق من كتابة عناصر الادخال بشكل صحيح
 (function () {
     'use strict'
@@ -32,6 +34,24 @@ let currentYear = document.querySelector('#year').innerHTML=copyDate;
       })
   })();
 
+
+  
+  //التحكم فى ظهور خلفية ولون عناصر القائمة العلوية عن النزول للاسفل
+
+  (function () {
+    const changeNavbar = () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    };
+
+    changeNavbar();
+  
+    window.addEventListener('scroll', changeNavbar);
+  })();
 
 
 
