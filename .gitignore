@@ -2,8 +2,7 @@
 node_modules/
 
 # Ignoring build files
-/dist
-/build
+dist/
 
 # Ignoring IDE settings (لـ VSCode مثلًا)
 .vscode/

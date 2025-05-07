@@ -28,7 +28,7 @@ a{
     color: #000;
 }
 .scrolled{
-    background-color: rgb(197, 232, 225) !important;
+    background-color:rgba($color: #16d9c9, $alpha:0.8) !important;
     
 
 }
@@ -81,12 +81,23 @@ header{
                     }
                    
                 }
-                .active-breadcrumb{
+                .active-breadcrumb_1{
                     font-weight: 500;
                     font-size: 19px;
-                    color: $color-coffe;
+                    color: #C19A6B;
                 }
+                .active-breadcrumb_2{
+                    font-weight: 500;
+                    font-size: 19px;
+                    color: #2F2F2F;
+                }
+                .active-breadcrumb_3{
+                    font-weight: 500;
+                    font-size: 19px;
+                    color:$color-coffe;
 
+                }
+                
             }
         
     }
@@ -217,6 +228,7 @@ header{
 }
 
 //page product
+
 .product-desc{
     background-color: #f9f9f9;
     padding: 2rem;
@@ -226,22 +238,16 @@ header{
             font-weight: 600;
         }
     }
-    .btn{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        width: 170px;
-        margin: auto;
-        font-size: 17px;
-        font-weight: 600;
-        background-color: $color-coffe;
-        color: $color-white;
-        transition: all 0.4s ease;
+    .btn-product-cart-2{
+       @include button-product-card(#7B5E57,$color-coffe);
+    }
+    .btn-product-cart-1{
+        @include button-product-card(#bc8a0a,$color-coffe);
 
-         &:hover{
-          background-color: #09c;
+    }
+    .btn-Product-cart-3{
+        @include button-product-card(#14c8e3,$color-coffe);
 
-         }
     }
 
 }
@@ -312,22 +318,30 @@ header{
                 height: 300px;
             }
             .card-body{
-                .btn{
-                    display: flex;
-                    justify-content: center;
-                    align-items:center;
-                    width:40%;
-                    font-size: 15px;
-                    font-weight: 600;
-                    background-color: $color-coffe;
-                    color: $color-white;
-                    transition: all 0.4s ease;
+                .btn-1{
+                 @include button-product-same(#e52cd3,$color-white)
             
-                     &:hover{
-                      background-color: #09c;
-            
-                     }
-            
+                }
+                .btn-2{
+                    @include button-product-same(#da1010,$color-white)
+                }
+                .btn-3{
+                    @include button-product-same(#11b674,$color-white)
+                }
+
+                .new-price{
+                    color: #29cc0c;
+                }
+                .new-price_2{
+                    color: #c19b1b;
+                    font-weight: 700;
+                    font-size: 20px;
+
+                }
+                .new-price_3{
+                    color: #c2200b;
+                    font-weight: 700;
+                    font-size: 20px;
                 }
 
             }
@@ -691,6 +705,15 @@ footer {
 
 }
 @media (max-width:992px){
+    .navbar{
+        background-color:rgba($color: #a5ebe5, $alpha:0.8) !important;
+        .navbar-nav{
+            .nav-link{
+                font-weight: 900 !important;
+                
+            }
+        }
+    }
     .navbar-nav{
         .nav-link{
            text-align: center;

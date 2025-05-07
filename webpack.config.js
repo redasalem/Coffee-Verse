@@ -23,6 +23,30 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: 'asset/resource',
+        use: [
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+              optipng: {
+                enabled: true,
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              webp: {
+                quality: 75,
+              },
+            },
+          },
+        ],
         generator: {
           filename: 'images/[name][ext]',
         },
@@ -37,10 +61,10 @@ module.exports = {
         exclude: /\.(png|jpe?g|gif|svg)$/i,
       },
       {
-        test: /\.(mp4|webm|ogg)$/i, // ✅ دعم الفيديوهات
+        test: /\.(mp4|webm|ogg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'videos/[name][ext]', // تخزين الفيديو في مجلد videos
+          filename: 'videos/[name][ext]',
         },
       },
       {

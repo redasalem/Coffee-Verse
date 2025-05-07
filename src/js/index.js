@@ -55,4 +55,13 @@ let currentYear = document.querySelector('#year').innerHTML=copyDate;
 
 
 
-  
+
+//  تحميل الصور فقط عندما تكون داخل الشاشة أو قربها، وبالتالي هيقلل وقت تحميل الصفحة 
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll('img:not([loading])');
+    images.forEach(img => {
+      img.setAttribute('loading', 'lazy');
+    });
+  });
+
