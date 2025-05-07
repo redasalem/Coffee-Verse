@@ -621,21 +621,11 @@ footer {
         .featured-products{
             .card{
                 .card-body{
-                    .btn{
-                        display: flex;
-                        justify-content: center;
-                        align-items:center;
-                        width:40%;
-                        font-size: 12px;
-                        font-weight: 600;
-                        background-color: $color-coffe;
-                        color: $color-white;
-                        transition: all 0.4s ease;
-                
-                         &:hover{
-                          background-color: #09c;
-                
-                         }
+                    .btn-1,
+                    .btn-2,
+                    .btn-3{
+                       width:150px;
+                       margin-right: 5px;
                 
                     }
     
@@ -678,22 +668,11 @@ footer {
         .featured-products{
             .card{
                 .card-body{
-                    .btn{
-                        display: flex;
-                        justify-content: center;
-                        align-items:center;
-                        width:50%;
-                        font-size: 10px;
-                        font-weight: 600;
-                        background-color: $color-coffe;
-                        color: $color-white;
-                        transition: all 0.4s ease;
-                
-                         &:hover{
-                          background-color: #09c;
-                
-                         }
-                
+                    .btn-1,
+                    .btn-2,
+                    .btn-3{
+                        width: fit-content;
+                     
                     }
     
                 }
@@ -733,21 +712,19 @@ footer {
         .featured-products{
             .card{
                 .card-body{
-                    .btn{
-                        display: flex;
-                        justify-content: center;
-                        align-items:center;
-                        width:50%;
-                        font-size: 10px;
-                        font-weight: 600;
-                        background-color: $color-coffe;
-                        color: $color-white;
-                        transition: all 0.4s ease;
-                        
-                         &:hover{
-                          background-color: #09c;
-                
-                         }
+                    .btn-1,
+                    .btn-2,
+                    .btn-3{
+                        width:150px;
+                        padding:7px 7px;
+                        font-size: 12px;
+                      
+                        i{
+                            font-size: 10px;
+                        }
+                      
+                       
+                       
                 
                     }
                     .old-price{
@@ -763,6 +740,31 @@ footer {
     
 
 }
+@media (max-width:768px){
+    .Similar-products{
+        .featured-products{
+            .card{
+                .card-body{
+                    .btn-1,
+                    .btn-2,
+                    .btn-3{
+                        width:70%;
+                        padding:7px 7px;
+                        margin-right: 7px;
+                      
+                       
+                       
+                
+                    }
+                   
+                }
+            }
+    
+        }
+      }
+
+
+}
 @media (max-width:600px){
     .featured-products{
         .card{
@@ -770,6 +772,37 @@ footer {
             
         }
     }
+    .Similar-products{
+        .featured-products{
+            .card{
+                .card-body{
+                    .btn-1,
+                    .btn-2,
+                    .btn-3{
+                        width:80%;
+                        padding:0px 7px;
+                        height: auto;
+                        padding: 5px 5px;
+                      i{
+                        font-size: 10px;
+                      }
+                       
+                       
+                
+                    }
+                    .new-price_2,
+                    .new-price_3,
+                    .new-price{
+                        padding-right: 7px;
+                        padding-left: 7px;
+                    }
+                   
+                }
+            }
+    
+        }
+      }
+
 
 }
 
